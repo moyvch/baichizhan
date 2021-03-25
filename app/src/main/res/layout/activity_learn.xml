@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
+
+        <Button
+            android:id="@+id/preBtn"
+            android:layout_width="162dp"
+            android:layout_height="60dp"
+            android:text="上一个"
+            app:backgroundTint="@color/purple_700"
+            app:layout_constraintBottom_toTopOf="@+id/detailsBtn"
+            app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+            app:layout_constraintHorizontal_bias="0.66"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="162dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:text="下一个"
+            app:backgroundTint="@color/purple_700"
+            app:layout_constraintBottom_toTopOf="@+id/detailsBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Chinese"
+        android:layout_width="280dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/huiF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/English"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/English"
+        android:layout_width="267dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/fo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/detailsBtn"
+        android:layout_width="342dp"
+        android:layout_height="60dp"
+        android:text="认真学习一下"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/English"
+        app:layout_constraintVertical_bias="0.782" />
+
+    <TextView
+        android:id="@+id/enterTest"
+        android:layout_width="173dp"
+        android:layout_height="21dp"
+        android:text="我都会了，直接进行考核"
+        android:textColor="#007"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsBtn"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/yingbiao"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/English"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <ImageView
+        android:id="@+id/returnImg"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/ng" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:text="待过：\n待学："
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <ImageView
+        android:id="@+id/fy1"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/yingbiao"
+        app:layout_constraintTop_toBottomOf="@+id/English"
+        app:srcCompat="@drawable/a0i" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

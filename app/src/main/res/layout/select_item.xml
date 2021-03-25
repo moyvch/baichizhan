@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <!--搜索结果列表项样式-->
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sceshia"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/chinses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/m"
+        android:paddingLeft="20dp"
+        android:paddingEnd="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingTop="5dp"/>
+</LinearLayout>

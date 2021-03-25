@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/b6"/>
+
+        </shape>
+    </item>
+    <item android:bottom="2px">
+        <shape android:shape="rectangle">
+            <solid android:color="#ff0000ff" />
+
+            <stroke
+                android:width="0dp"
+                android:color="#000000" />
+            <gradient
+                android:endColor="#FFFFFF"
+                android:startColor="#FFFFFF" />
+            <padding />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</layer-list>
+    <!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+&lt;!&ndash; 边框颜色值 &ndash;&gt;
+<item android:left="0dp">
+    <shape>
+        <solid android:color="@color/g7"/>
+    </shape>
+</item>
+&lt;!&ndash; 主体背景颜色值 &ndash;&gt;
+<item android:left="0dp" android:top="50dp" android:right="25dp" android:bottom="10dp">
+    <shape>
+        <solid android:color="@color/white"/>
+    </shape>
+</item>
+</layer-list>-->

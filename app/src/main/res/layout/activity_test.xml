@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--android:background="#ECF0F1"-->
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="350dp"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:text="单词显示框"
+        android:textColor="#0C29B6"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <Button
+        android:id="@+id/textView11"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:text="A 选项"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/textView12"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:text="B 选项"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/textView13"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:text="C 选项"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/textView14"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:text="D 选项"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/yingbiao1"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginBottom="68dp"
+        android:gravity="center_horizontal"
+        android:text="音标"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/khan"
+        android:layout_width="297dp"
+        android:layout_height="55dp"
+        android:text="下一题"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/fhj"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/ng" />
+
+    <ImageView
+        android:id="@+id/fy2"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/yingbiao1"
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        app:srcCompat="@drawable/a0i" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
